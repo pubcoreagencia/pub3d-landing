@@ -17,3 +17,7 @@ const pub3dSceneStyles = document.createElement('link');
 pub3dSceneStyles.rel = 'stylesheet';
 pub3dSceneStyles.href = 'scene.css';
 document.head.append(pub3dSceneStyles);
+const visualRefinement = document.createElement('link');
+visualRefinement.rel = 'stylesheet';
+visualRefinement.href = 'visual-refinement.css';
+document.head.append(visualRefinement);
