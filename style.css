@@ -954,8 +954,7 @@ footer {
   }
 
   .hero-depth {
-    min-height: 320px;
-    order: -1;
+    min-height: 260px;
     opacity: .8;
   }
 
@@ -1033,6 +1032,23 @@ footer {
   .hero {
     min-height: 680px;
     padding-top: 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    align-items: flex-start;
+  }
+
+  .hero-copy {
+    order: 1;
+  }
+
+  .hero-depth {
+    order: 2;
+    width: 100%;
+    min-height: 190px;
+    margin-bottom: 54px;
+    place-self: center;
+    transform: none;
   }
 
   h1 { font-size: 44px; }
