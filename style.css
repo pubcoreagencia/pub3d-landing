@@ -1052,6 +1052,17 @@ footer {
     max-width: 100%;
   }
 
+  .hero-text {
+    width: 100%;
+    max-width: min(100%, 330px);
+  }
+
+  .hero-actions {
+    width: 100%;
+    max-width: min(100%, 342px);
+    gap: 16px;
+  }
+
   .hero-depth {
     order: 2;
     width: 100%;
