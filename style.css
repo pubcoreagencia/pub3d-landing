@@ -1125,15 +1125,15 @@ footer {
   width: 320px;
   height: 250px;
   transform-style: preserve-3d;
-  transform: rotateX(48deg) rotateZ(-10deg);
+  transform: rotateY(-18deg) rotateZ(-4deg);
 }
 
 .print-volume i,
 .volume-core {
   position: absolute;
   left: 42px;
-  width: 220px;
-  height: 32px;
+  width: 214px;
+  height: 24px;
   top: 38px;
   border: 1px solid rgba(245, 239, 230, .72);
   border-radius: 22px;
@@ -1142,24 +1142,24 @@ footer {
   transform: translate3d(var(--layer-x, 0), var(--layer-y, 0), var(--layer-z, 0));
 }
 
-.print-volume i:nth-child(1) { --layer-y: 0px; --layer-z: -56px; }
-.print-volume i:nth-child(2) { --layer-y: 8px; --layer-z: -44px; }
-.print-volume i:nth-child(3) { --layer-y: 16px; --layer-z: -32px; }
-.print-volume i:nth-child(4) { --layer-y: 24px; --layer-z: -20px; }
-.print-volume i:nth-child(5) { --layer-y: 32px; --layer-z: -8px; }
-.print-volume i:nth-child(6) { --layer-y: 40px; --layer-z: 4px; }
-.print-volume i:nth-child(7) { --layer-y: 48px; --layer-z: 16px; background: linear-gradient(180deg, #ff4a31, #c42f20); border-color: #ff725f; }
-.print-volume i:nth-child(8) { --layer-y: 56px; --layer-z: 28px; }
-.print-volume i:nth-child(9) { --layer-y: 64px; --layer-z: 40px; }
-.print-volume i:nth-child(10) { --layer-y: 72px; --layer-z: 52px; }
-.print-volume i:nth-child(11) { --layer-y: 80px; --layer-z: 64px; }
-.print-volume i:nth-child(12) { --layer-y: 88px; --layer-z: 76px; }
+.print-volume i:nth-child(1) { --layer-y: 0px; --layer-z: -44px; }
+.print-volume i:nth-child(2) { --layer-y: 10px; --layer-z: -36px; }
+.print-volume i:nth-child(3) { --layer-y: 20px; --layer-z: -28px; }
+.print-volume i:nth-child(4) { --layer-y: 30px; --layer-z: -20px; }
+.print-volume i:nth-child(5) { --layer-y: 40px; --layer-z: -12px; }
+.print-volume i:nth-child(6) { --layer-y: 50px; --layer-z: -4px; }
+.print-volume i:nth-child(7) { --layer-y: 60px; --layer-z: 4px; background: linear-gradient(180deg, #ff4a31, #c42f20); border-color: #ff725f; }
+.print-volume i:nth-child(8) { --layer-y: 70px; --layer-z: 12px; }
+.print-volume i:nth-child(9) { --layer-y: 80px; --layer-z: 20px; }
+.print-volume i:nth-child(10) { --layer-y: 90px; --layer-z: 28px; }
+.print-volume i:nth-child(11) { --layer-y: 100px; --layer-z: 36px; }
+.print-volume i:nth-child(12) { --layer-y: 110px; --layer-z: 44px; }
 
 .volume-core {
   left: 112px;
   width: 80px;
-  top: 82px;
-  height: 66px;
+  top: 84px;
+  height: 82px;
   border-radius: 18px;
   opacity: .32;
   background: #1e1f1b;
@@ -1318,7 +1318,7 @@ footer {
   width: min(72%, 430px);
   height: 330px;
   transform-style: preserve-3d;
-  transform: rotateX(12deg) rotateZ(-4deg);
+  transform: none;
 }
 
 .printer-column,
@@ -1337,6 +1337,8 @@ footer {
   width: 20px;
   height: 220px;
   bottom: 60px;
+  background: #1f211e;
+  border-color: rgba(245, 239, 230, .5);
 }
 
 .printer-column.left { left: 44px; }
@@ -1347,6 +1349,9 @@ footer {
   right: 44px;
   top: 48px;
   height: 20px;
+  background: #1f211e;
+  border-color: rgba(245, 239, 230, .5);
+  box-shadow: 18px 20px 0 rgba(0, 0, 0, .22), inset 0 -3px 0 rgba(228, 61, 37, .5);
 }
 
 .printer-bed {
@@ -1462,7 +1467,7 @@ footer {
   .print-volume {
     width: 240px;
     height: 180px;
-    transform: rotateX(48deg) rotateZ(-10deg) scale(.82);
+    transform: rotateY(-18deg) rotateZ(-4deg) scale(.82);
   }
 
   .print-bed {
@@ -1483,7 +1488,7 @@ footer {
   .printer-visual {
     width: 300px;
     height: 250px;
-    transform: rotateX(12deg) rotateZ(-4deg) scale(.82);
+    transform: scale(.82);
   }
 
   .farm-cells {
