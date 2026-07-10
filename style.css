@@ -1122,44 +1122,44 @@ footer {
 
 .print-volume {
   position: relative;
-  width: 340px;
+  width: 320px;
   height: 250px;
   transform-style: preserve-3d;
-  transform: rotateX(58deg) rotateZ(-12deg);
+  transform: rotateX(48deg) rotateZ(-10deg);
 }
 
 .print-volume i,
 .volume-core {
   position: absolute;
-  left: 30px;
-  right: 30px;
-  height: 22px;
-  top: calc(38px + var(--layer-y, 0px));
+  left: 42px;
+  width: 220px;
+  height: 32px;
+  top: 38px;
   border: 1px solid rgba(245, 239, 230, .72);
-  border-radius: 24px;
+  border-radius: 22px;
   background: linear-gradient(180deg, #eee8dc, #bfb8aa);
   box-shadow: 0 12px 24px rgba(0, 0, 0, .26);
   transform: translate3d(var(--layer-x, 0), var(--layer-y, 0), var(--layer-z, 0));
 }
 
-.print-volume i:nth-child(1) { --layer-y: 0px; --layer-z: -66px; }
-.print-volume i:nth-child(2) { --layer-y: 10px; --layer-z: -54px; }
-.print-volume i:nth-child(3) { --layer-y: 20px; --layer-z: -42px; }
-.print-volume i:nth-child(4) { --layer-y: 30px; --layer-z: -30px; }
-.print-volume i:nth-child(5) { --layer-y: 40px; --layer-z: -18px; }
-.print-volume i:nth-child(6) { --layer-y: 50px; --layer-z: -6px; }
-.print-volume i:nth-child(7) { --layer-y: 60px; --layer-z: 6px; background: linear-gradient(180deg, #ff4a31, #c42f20); border-color: #ff725f; }
-.print-volume i:nth-child(8) { --layer-y: 70px; --layer-z: 18px; }
-.print-volume i:nth-child(9) { --layer-y: 80px; --layer-z: 30px; }
-.print-volume i:nth-child(10) { --layer-y: 90px; --layer-z: 42px; }
-.print-volume i:nth-child(11) { --layer-y: 100px; --layer-z: 54px; }
-.print-volume i:nth-child(12) { --layer-y: 110px; --layer-z: 66px; }
+.print-volume i:nth-child(1) { --layer-y: 0px; --layer-z: -56px; }
+.print-volume i:nth-child(2) { --layer-y: 8px; --layer-z: -44px; }
+.print-volume i:nth-child(3) { --layer-y: 16px; --layer-z: -32px; }
+.print-volume i:nth-child(4) { --layer-y: 24px; --layer-z: -20px; }
+.print-volume i:nth-child(5) { --layer-y: 32px; --layer-z: -8px; }
+.print-volume i:nth-child(6) { --layer-y: 40px; --layer-z: 4px; }
+.print-volume i:nth-child(7) { --layer-y: 48px; --layer-z: 16px; background: linear-gradient(180deg, #ff4a31, #c42f20); border-color: #ff725f; }
+.print-volume i:nth-child(8) { --layer-y: 56px; --layer-z: 28px; }
+.print-volume i:nth-child(9) { --layer-y: 64px; --layer-z: 40px; }
+.print-volume i:nth-child(10) { --layer-y: 72px; --layer-z: 52px; }
+.print-volume i:nth-child(11) { --layer-y: 80px; --layer-z: 64px; }
+.print-volume i:nth-child(12) { --layer-y: 88px; --layer-z: 76px; }
 
 .volume-core {
-  left: 92px;
-  right: 92px;
-  top: 92px;
-  height: 72px;
+  left: 112px;
+  width: 80px;
+  top: 82px;
+  height: 66px;
   border-radius: 18px;
   opacity: .32;
   background: #1e1f1b;
@@ -1318,7 +1318,7 @@ footer {
   width: min(72%, 430px);
   height: 330px;
   transform-style: preserve-3d;
-  transform: rotateX(57deg) rotateZ(-8deg);
+  transform: rotateX(12deg) rotateZ(-4deg);
 }
 
 .printer-column,
@@ -1334,7 +1334,7 @@ footer {
 }
 
 .printer-column {
-  width: 18px;
+  width: 20px;
   height: 220px;
   bottom: 60px;
 }
@@ -1345,14 +1345,14 @@ footer {
 .printer-gantry {
   left: 44px;
   right: 44px;
-  top: 54px;
-  height: 18px;
+  top: 48px;
+  height: 20px;
 }
 
 .printer-bed {
   left: 70px;
   right: 70px;
-  bottom: 44px;
+  bottom: 56px;
   height: 42px;
   background: #e6ded1;
   border-color: rgba(245, 239, 230, .72);
@@ -1360,7 +1360,7 @@ footer {
 
 .printer-head {
   left: 46%;
-  top: 72px;
+  top: 76px;
   width: 54px;
   height: 38px;
   background: #e43d25;
@@ -1380,7 +1380,7 @@ footer {
 
 .printed-part {
   left: 150px;
-  bottom: 92px;
+  bottom: 106px;
   width: 130px;
   height: 58px;
   border: 0;
@@ -1462,7 +1462,7 @@ footer {
   .print-volume {
     width: 240px;
     height: 180px;
-    transform: rotateX(58deg) rotateZ(-12deg) scale(.82);
+    transform: rotateX(48deg) rotateZ(-10deg) scale(.82);
   }
 
   .print-bed {
@@ -1483,7 +1483,7 @@ footer {
   .printer-visual {
     width: 300px;
     height: 250px;
-    transform: rotateX(57deg) rotateZ(-8deg) scale(.82);
+    transform: rotateX(12deg) rotateZ(-4deg) scale(.82);
   }
 
   .farm-cells {
