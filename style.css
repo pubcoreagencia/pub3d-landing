@@ -305,14 +305,6 @@ h3 {
 .layer-stack i:nth-child(11) { transform: translate3d(15px, -10px, 90px); }
 .layer-stack i:nth-child(12) { transform: translate3d(18px, -12px, 108px); }
 
-.filament-path {
-  position: absolute;
-  width: min(86%, 440px);
-  height: auto;
-  transform: translateY(88px) translateZ(90px);
-}
-
-.filament-path path,
 .module-path path {
   fill: none;
   stroke: var(--red);
@@ -1144,70 +1136,256 @@ footer {
   min-height: 450px;
 }
 
-.print-volume {
+.hero-printer {
   position: relative;
-  width: 320px;
-  height: 250px;
+  width: min(100%, 520px);
+  height: 430px;
   transform-style: preserve-3d;
-  transform: rotateY(-18deg) rotateZ(-4deg);
+  transform: rotateX(58deg) rotateZ(-10deg) rotateY(-8deg);
+  filter: drop-shadow(0 34px 42px rgba(0, 0, 0, .34));
 }
 
-.print-volume i,
-.volume-core {
+.hero-printer > span,
+.hero-printer svg {
   position: absolute;
-  left: 42px;
-  width: 214px;
-  height: 24px;
-  top: 38px;
-  border: 1px solid rgba(245, 239, 230, .72);
-  border-radius: 22px;
-  background: linear-gradient(180deg, #eee8dc, #bfb8aa);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, .26);
-  transform: translate3d(var(--layer-x, 0), var(--layer-y, 0), var(--layer-z, 0));
+  transform-style: preserve-3d;
 }
 
-.print-volume i:nth-child(1) { --layer-y: 0px; --layer-z: -44px; }
-.print-volume i:nth-child(2) { --layer-y: 10px; --layer-z: -36px; }
-.print-volume i:nth-child(3) { --layer-y: 20px; --layer-z: -28px; }
-.print-volume i:nth-child(4) { --layer-y: 30px; --layer-z: -20px; }
-.print-volume i:nth-child(5) { --layer-y: 40px; --layer-z: -12px; }
-.print-volume i:nth-child(6) { --layer-y: 50px; --layer-z: -4px; }
-.print-volume i:nth-child(7) { --layer-y: 60px; --layer-z: 4px; background: linear-gradient(180deg, #ff4a31, #c42f20); border-color: #ff725f; }
-.print-volume i:nth-child(8) { --layer-y: 70px; --layer-z: 12px; }
-.print-volume i:nth-child(9) { --layer-y: 80px; --layer-z: 20px; }
-.print-volume i:nth-child(10) { --layer-y: 90px; --layer-z: 28px; }
-.print-volume i:nth-child(11) { --layer-y: 100px; --layer-z: 36px; }
-.print-volume i:nth-child(12) { --layer-y: 110px; --layer-z: 44px; }
+.hero-printer-shadow {
+  inset: auto 42px 0 32px;
+  height: 112px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, .46), transparent 68%);
+  transform: translateZ(-80px);
+  opacity: .76;
+}
 
-.volume-core {
-  left: 112px;
-  width: 80px;
-  top: 84px;
-  height: 82px;
+.hero-printer-back {
+  left: 72px;
+  top: 48px;
+  width: 350px;
+  height: 276px;
+  border: 1px solid rgba(245, 239, 230, .16);
   border-radius: 18px;
-  opacity: .32;
-  background: #1e1f1b;
-  transform: translateZ(84px);
-}
-
-.print-bed {
-  position: absolute;
-  width: 420px;
-  height: 190px;
-  border: 1px solid rgba(245, 239, 230, .22);
   background:
-    repeating-linear-gradient(0deg, rgba(245, 239, 230, .12) 0 1px, transparent 1px 22px),
-    repeating-linear-gradient(90deg, rgba(245, 239, 230, .12) 0 1px, transparent 1px 22px);
-  transform: translateY(98px) rotateX(62deg) rotateZ(-12deg);
+    linear-gradient(140deg, rgba(255, 255, 255, .05), transparent 42%),
+    linear-gradient(180deg, rgba(74, 27, 21, .82), rgba(33, 21, 17, .86));
+  box-shadow: inset 0 0 0 18px rgba(14, 15, 13, .34), 22px 28px 0 rgba(100, 24, 16, .34);
+  transform: translateZ(-42px);
 }
 
-.filament-path {
-  transform: translate(18px, 104px) translateZ(120px);
+.hero-printer-top,
+.hero-printer-base,
+.hero-printer-rail,
+.hero-printer-gantry {
+  left: 70px;
+  width: 356px;
+  border: 1px solid rgba(245, 239, 230, .35);
+  background: linear-gradient(180deg, #252621, #11120f);
 }
 
-.filament-path path {
-  stroke-dasharray: 18 16;
+.hero-printer-top {
+  top: 48px;
+  height: 20px;
+  border-radius: 12px 12px 4px 4px;
+  transform: translateZ(58px);
+}
+
+.hero-printer-base {
+  top: 318px;
+  height: 46px;
+  border-radius: 8px 8px 18px 18px;
+  background:
+    linear-gradient(90deg, rgba(228, 61, 37, .72), transparent 24%, transparent 76%, rgba(228, 61, 37, .5)),
+    linear-gradient(180deg, #2b2b26, #151612);
+  transform: translateZ(60px);
+}
+
+.hero-printer-column {
+  top: 62px;
+  width: 22px;
+  height: 262px;
+  border: 1px solid rgba(245, 239, 230, .26);
+  background: linear-gradient(90deg, #11120f, #34352f 46%, #10110e);
+  box-shadow: 10px 12px 0 rgba(0, 0, 0, .2);
+  transform: translateZ(70px);
+}
+
+.hero-printer-column-left { left: 72px; }
+.hero-printer-column-right { left: 404px; }
+
+.hero-printer-rail {
+  top: 115px;
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #8b8378, #f4eadb 42%, #847d72);
+  transform: translateZ(92px);
+}
+
+.hero-printer-gantry {
+  top: 124px;
+  left: 120px;
+  width: 232px;
+  height: 32px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #3b3b34, #141511);
+  transform: translateZ(98px);
+}
+
+.hero-printer-carriage {
+  left: 238px;
+  top: 101px;
+  width: 70px;
+  height: 62px;
+  border: 1px solid rgba(245, 239, 230, .4);
+  border-radius: 12px 12px 8px 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, .18), transparent 42%),
+    linear-gradient(180deg, #ff4d32, #c72d1d);
+  box-shadow: 0 18px 24px rgba(0, 0, 0, .28);
+  transform: translateZ(126px);
+  animation: heroCarriage 5.6s ease-in-out infinite;
+}
+
+.hero-printer-carriage span {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: -16px;
+  height: 16px;
+  border-radius: 0 0 8px 8px;
+  background: linear-gradient(180deg, #7a1f16, #23110e);
+}
+
+.hero-printer-nozzle {
+  left: 264px;
+  top: 166px;
+  width: 28px;
+  height: 48px;
+  background: linear-gradient(180deg, #3a3028, #f0d5ad 68%, #6d5140);
+  clip-path: polygon(20% 0, 80% 0, 62% 58%, 50% 100%, 38% 58%);
+  transform: translateZ(130px);
+  animation: heroNozzle 5.6s ease-in-out infinite;
+}
+
+.hero-printer-bed {
+  left: 126px;
+  top: 248px;
+  width: 260px;
+  height: 74px;
+  border: 1px solid rgba(245, 239, 230, .42);
+  border-radius: 6px;
+  background:
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, .12) 0 1px, transparent 1px 14px),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, .1) 0 1px, transparent 1px 18px),
+    linear-gradient(180deg, #e6dccd, #a99f91);
+  box-shadow: 0 18px 0 rgba(31, 21, 17, .46);
+  transform: rotateX(2deg) translateZ(94px);
+}
+
+.hero-printer-bed span {
+  position: absolute;
+  inset: 7px;
+  border: 1px solid rgba(20, 20, 16, .15);
+  border-radius: 4px;
+}
+
+.hero-printed-part {
+  left: 186px;
+  top: 212px;
+  width: 145px;
+  height: 72px;
+  transform: translateZ(134px);
+}
+
+.hero-printed-part i {
+  position: absolute;
+  left: 0;
+  width: 145px;
+  height: 12px;
+  border: 1px solid rgba(245, 239, 230, .76);
+  border-radius: 999px;
+  background: linear-gradient(180deg, #f2e8d9, #bfb4a4);
+  box-shadow: 0 7px 12px rgba(0, 0, 0, .18);
+}
+
+.hero-printed-part i:nth-child(1) { top: 52px; }
+.hero-printed-part i:nth-child(2) { top: 42px; }
+.hero-printed-part i:nth-child(3) { top: 32px; }
+.hero-printed-part i:nth-child(4) { top: 22px; }
+.hero-printed-part i:nth-child(5) { top: 12px; background: linear-gradient(180deg, #ff4d32, #b72d1f); border-color: rgba(255, 122, 99, .9); }
+.hero-printed-part i:nth-child(6) { top: 2px; opacity: .86; }
+
+.hero-printer-spool {
+  right: 50px;
+  top: 0;
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
+  border: 12px solid #e43d25;
+  background:
+    radial-gradient(circle at center, #171713 0 18px, transparent 19px),
+    conic-gradient(from 20deg, #ff6048, #a82217, #ff6048);
+  box-shadow: inset 0 0 0 8px rgba(255, 255, 255, .1), 0 20px 28px rgba(0, 0, 0, .28);
+  transform: translateZ(112px) rotateZ(var(--spool, 0deg));
+  animation: heroSpool 9s linear infinite;
+}
+
+.hero-printer-spool span {
+  position: absolute;
+  inset: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, .24);
+}
+
+.hero-filament {
+  left: 188px;
+  top: 18px;
+  width: 250px;
+  height: 150px;
+  transform: translateZ(120px);
+}
+
+.hero-filament path {
+  fill: none;
+  stroke: #e43d25;
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-dasharray: 18 12;
   opacity: .9;
+  filter: drop-shadow(0 6px 6px rgba(0, 0, 0, .22));
+  animation: heroFilament 4.8s linear infinite;
+}
+
+.hero-printer-status {
+  left: 96px;
+  top: 368px;
+  padding: 8px 12px;
+  border: 1px solid rgba(245, 239, 230, .3);
+  border-radius: 999px;
+  color: #f7f1e8;
+  background: rgba(20, 20, 16, .62);
+  font: 10px var(--mono);
+  letter-spacing: .04em;
+  transform: translateZ(130px);
+}
+
+@keyframes heroCarriage {
+  0%, 100% { transform: translate3d(-34px, 0, 126px); }
+  50% { transform: translate3d(38px, 0, 126px); }
+}
+
+@keyframes heroNozzle {
+  0%, 100% { transform: translate3d(-34px, 0, 130px); }
+  50% { transform: translate3d(38px, 0, 130px); }
+}
+
+@keyframes heroSpool {
+  to { transform: translateZ(112px) rotateZ(360deg); }
+}
+
+@keyframes heroFilament {
+  to { stroke-dashoffset: -60; }
 }
 
 .summary-flow article .mini-visual {
@@ -1488,21 +1666,59 @@ footer {
 }
 
 @media (max-width: 720px) {
-  .print-volume {
-    width: 240px;
-    height: 180px;
-    transform: rotateY(-18deg) rotateZ(-4deg) scale(.82);
+  .hero-printer {
+    width: 360px;
+    height: 342px;
+    margin-left: -132px;
+    transform: rotateX(56deg) rotateZ(-10deg) rotateY(-7deg) scale(.66);
+    transform-origin: center top;
   }
 
-  .print-bed {
-    width: 292px;
-    height: 132px;
-    transform: translateY(78px) rotateX(62deg) rotateZ(-12deg);
+  .hero-printer-back {
+    left: 66px;
+    width: 318px;
+    height: 254px;
   }
 
-  .filament-path {
-    width: 260px;
-    transform: translate(4px, 76px) translateZ(80px);
+  .hero-printer-top,
+  .hero-printer-base,
+  .hero-printer-rail {
+    left: 64px;
+    width: 324px;
+  }
+
+  .hero-printer-column-left { left: 66px; }
+  .hero-printer-column-right { left: 368px; }
+
+  .hero-printer-gantry {
+    left: 112px;
+    width: 206px;
+  }
+
+  .hero-printer-bed {
+    left: 110px;
+    width: 236px;
+  }
+
+  .hero-printed-part {
+    left: 162px;
+  }
+
+  .hero-printer-spool {
+    right: 24px;
+    top: 4px;
+    width: 82px;
+    height: 82px;
+  }
+
+  .hero-filament {
+    left: 160px;
+    width: 224px;
+  }
+
+  .hero-printer-status {
+    left: 78px;
+    top: 358px;
   }
 
   .catalog-flow {
@@ -1525,10 +1741,17 @@ footer {
   .visual-panel,
   .mini-visual,
   .final-visual,
-  .print-volume,
+  .hero-printer,
   .printer-visual,
   .catalog-flow,
   .adaptive-object {
     transform: none !important;
+  }
+
+  .hero-printer-carriage,
+  .hero-printer-nozzle,
+  .hero-printer-spool,
+  .hero-filament path {
+    animation: none !important;
   }
 }
