@@ -42,10 +42,15 @@ export function setupVisualSystem() {
     if (pointerFrame) return;
     pointerFrame = requestAnimationFrame(() => {
       pointerFrame = 0;
+      if (event.target.closest('a, button, input, select, textarea, summary, .form-card, #nav')) {
+        document.documentElement.style.setProperty('--ry', '0deg');
+        document.documentElement.style.setProperty('--rx', '0deg');
+        return;
+      }
       const x = event.clientX / innerWidth - .5;
       const y = event.clientY / innerHeight - .5;
-      document.documentElement.style.setProperty('--ry', `${(x * 4).toFixed(2)}deg`);
-      document.documentElement.style.setProperty('--rx', `${(-y * 3).toFixed(2)}deg`);
+      document.documentElement.style.setProperty('--ry', `${(x * 3).toFixed(2)}deg`);
+      document.documentElement.style.setProperty('--rx', `${(-y * 2.4).toFixed(2)}deg`);
     });
   }, { passive: true });
 }

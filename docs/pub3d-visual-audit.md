@@ -35,9 +35,11 @@ A nova camada usa apenas DOM, CSS 3D e SVG leve. O vocabulário é único durant
 | Camadas empilhadas | impressão, construção e volume | hero e personalizados |
 | Fita/linha | filamento, fluxo e conexão | hero e produtos |
 | Módulos repetidos | catálogo, pedido e recorrência | resumo e produtos |
+| Impressora editorial | produção FDM sem simulação técnica | operação |
 | Células conectadas | farm, expansão e capacidade | operação e expansão |
 
 O sistema é decorativo e subordinado ao conteúdo. Ele não representa produtos reais nem simula uma máquina.
+Na seção de operação, a impressora é uma silhueta minimalista feita com DOM/CSS para dar reconhecimento imediato à farm, sem loader, modelo externo ou canvas.
 
 ## Validação de acúmulo
 

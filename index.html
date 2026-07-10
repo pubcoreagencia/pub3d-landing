@@ -39,11 +39,13 @@
         </div>
       </div>
       <div class="depth-scene hero-depth" aria-hidden="true">
-        <div class="layer-stack hero-stack">
+        <div class="print-volume hero-volume">
           <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <span class="volume-core"></span>
         </div>
+        <span class="print-bed"></span>
         <svg class="filament-path" viewBox="0 0 420 260" role="presentation" focusable="false">
-          <path d="M22 196 C92 88 154 244 230 122 S350 54 398 116" />
+          <path d="M28 200 C92 132 132 214 196 160 S290 82 392 124" />
         </svg>
       </div>
       <div class="hero-meta"><span>CAMADAS → PRODUTO → PEDIDO → REDE</span><span>01 / 07</span></div>
@@ -56,10 +58,10 @@
         <p>O ponto de partida muda. O fluxo conecta tudo.</p>
       </div>
       <div class="summary-flow">
-        <article data-visual="adapt"><div class="mini-visual" aria-hidden="true"><i></i><i></i><i></i></div><span>01</span><h3>Personalizar</h3><p>Encomendas, peças únicas, protótipos e projetos sob medida.</p></article>
-        <article data-visual="product"><div class="mini-visual" aria-hidden="true"><i></i><i></i><i></i></div><span>02</span><h3>Desenvolver</h3><p>Produtos próprios preparados para catálogo e demanda real.</p></article>
-        <article data-visual="order"><div class="mini-visual" aria-hidden="true"><i></i><i></i><i></i></div><span>03</span><h3>Operar</h3><p>Anúncios, pedidos, produção, acabamento, embalagem e envio.</p></article>
-        <article data-visual="network"><div class="mini-visual" aria-hidden="true"><i></i><i></i><i></i></div><span>04</span><h3>Replicar</h3><p>Um processo preparado para novas farms, operadores e regiões.</p></article>
+        <article data-visual="adapt"><div class="mini-visual" aria-hidden="true"><i></i><i></i><i></i><i></i></div><span>01</span><h3>Personalizar</h3><p>Encomendas, peças únicas, protótipos e projetos sob medida.</p></article>
+        <article data-visual="product"><div class="mini-visual" aria-hidden="true"><i></i><i></i><i></i><i></i></div><span>02</span><h3>Desenvolver</h3><p>Produtos próprios preparados para catálogo e demanda real.</p></article>
+        <article data-visual="order"><div class="mini-visual" aria-hidden="true"><i></i><i></i><i></i><i></i></div><span>03</span><h3>Operar</h3><p>Anúncios, pedidos, produção, acabamento, embalagem e envio.</p></article>
+        <article data-visual="network"><div class="mini-visual" aria-hidden="true"><i></i><i></i><i></i><i></i></div><span>04</span><h3>Replicar</h3><p>Um processo preparado para novas farms, operadores e regiões.</p></article>
       </div>
     </section>
 
@@ -69,7 +71,10 @@
         <h2>Alguns produtos começam com uma demanda. Outros começam com uma história.</h2>
         <p>Uma ideia, um desenho, uma foto, uma medida ou um arquivo pronto podem iniciar um projeto. Antes da produção, cada peça passa por uma análise de viabilidade, geometria, material, acabamento, quantidade e uso pretendido.</p>
       </div>
-      <div class="visual-panel adaptive-panel" aria-hidden="true"><div class="layer-stack compact-stack"><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="measure-line"></span></div>
+      <div class="visual-panel adaptive-panel" aria-hidden="true">
+        <div class="adaptive-object"><i></i><i></i><i></i><i></i><span></span></div>
+        <span class="measure-line"></span>
+      </div>
       <div class="custom-layout">
         <div class="custom-steps"><span>Referência ou necessidade</span><i>→</i><span>Análise</span><i>→</i><span>Modelo ou ajuste</span><i>→</i><span>Produção</span><i>→</i><span>Acabamento</span><i>→</i><span>Entrega</span></div>
         <div class="custom-notes">
@@ -86,7 +91,10 @@
         <h2>Não produzimos apenas sob encomenda. Também desenvolvemos o que pode ser vendido.</h2>
         <p>Pesquisa de demanda, produto, anúncio e produção fazem parte do mesmo ciclo. A PUB 3D estrutura itens próprios e personalizáveis para circulação em catálogo e marketplaces.</p>
       </div>
-      <div class="visual-panel module-panel" aria-hidden="true"><div class="module-grid"><i></i><i></i><i></i><i></i><i></i><i></i></div><svg class="module-path" viewBox="0 0 360 120" role="presentation" focusable="false"><path d="M20 74 H112 C150 74 148 30 186 30 H338" /></svg></div>
+      <div class="visual-panel module-panel" aria-hidden="true">
+        <div class="catalog-flow"><div class="module-grid"><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="selected-module"></span><span class="queue-module"></span></div>
+        <svg class="module-path" viewBox="0 0 360 120" role="presentation" focusable="false"><path d="M20 74 H112 C150 74 148 30 186 30 H338" /></svg>
+      </div>
       <div class="commerce-loop">
         <div><b>01</b><span>Demanda</span></div><i>→</i><div><b>02</b><span>Produto</span></div><i>→</i><div><b>03</b><span>Anúncio</span></div><i>→</i><div><b>04</b><span>Pedido</span></div><i>→</i><div><b>05</b><span>Produção</span></div><i>→</i><div><b>06</b><span>Envio</span></div><i>→</i><div><b>07</b><span>Dados</span></div>
       </div>
@@ -94,7 +102,14 @@
     </section>
 
     <section id="operacao" class="operation">
-      <div class="operation-art flow-panel" aria-hidden="true"><div class="flow-line"></div><div class="flow-module active"><i></i><i></i><i></i></div><div class="flow-module"><i></i><i></i><i></i></div><div class="flow-module"><i></i><i></i><i></i></div></div>
+      <div class="operation-art flow-panel" aria-hidden="true">
+        <div class="printer-visual">
+          <span class="printer-column left"></span><span class="printer-column right"></span><span class="printer-gantry"></span><span class="printer-head"></span><span class="printer-bed"></span>
+          <span class="printed-part"><i></i><i></i><i></i><i></i><i></i></span>
+        </div>
+        <div class="farm-cells"><i></i><i></i><i></i></div>
+        <div class="flow-line"></div>
+      </div>
       <div class="operation-copy">
         <p class="eyebrow"><span></span> 04 / Operação integrada e farm</p>
         <h2>A farm é o motor produtivo. O marketplace é o canal. O processo conecta.</h2>
@@ -111,7 +126,7 @@
         <p>Entre os pilares previstos estão catálogo, processos, padrões de materiais e acabamento, operação comercial, pedidos, embalagem, expedição, dados e acompanhamento operacional.</p>
         <p class="notice">O cadastro representa uma manifestação de interesse e não garante aprovação, disponibilidade regional, exclusividade territorial ou abertura de unidade. As condições comerciais, operacionais e jurídicas serão apresentadas após a conclusão da estruturação do modelo.</p>
       </div>
-      <div class="visual-panel cluster-panel" aria-hidden="true"><div class="cluster-cell"><i></i><i></i></div><div class="cluster-cell"><i></i><i></i></div><div class="cluster-cell"><i></i><i></i></div><div class="cluster-cell"><i></i><i></i></div></div>
+      <div class="visual-panel cluster-panel" aria-hidden="true"><div class="cluster-cell"><i></i><i></i></div><div class="cluster-cell"><i></i><i></i></div><div class="cluster-cell"><i></i><i></i></div><div class="cluster-cell"><i></i><i></i></div><span class="cluster-link"></span></div>
       <div class="expansion-profiles">
         <p>Para quem queremos ouvir</p>
         <article><b>01</b><h3>Operador</h3><span>Produção, acabamento e expedição.</span></article>
@@ -138,7 +153,7 @@
       <div class="faq"><h3>Perguntas essenciais</h3><details><summary>Preciso ter um arquivo 3D?</summary><p>Não. A análise pode começar por ideia, foto, referência, medida ou necessidade funcional.</p></details><details><summary>Onde encontro os produtos da PUB 3D?</summary><p>Os canais serão publicados somente quando houver uma página ou marketplace oficial ativo.</p></details><details><summary>A operação de expansão envolve apenas a farm?</summary><p>Não. O modelo em estruturação considera catálogo, vendas, pedidos, produção, acabamento, embalagem e expedição.</p></details><details><summary>Como os pedidos serão distribuídos?</summary><p>O desenho comercial ainda está em estruturação e será apresentado após sua validação.</p></details></div>
     </section>
 
-    <section class="final-cta"><div class="final-visual" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><p>Uma peça pode começar com uma ideia. Uma operação começa quando produto, pedido e produção trabalham juntos.</p><div><a href="#projeto">Solicitar análise <b>↗</b></a><a href="#interesse">Cadastrar interesse <b>↗</b></a></div></section>
+    <section class="final-cta"><div class="final-visual" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><span></span></div><p>Uma peça pode começar com uma ideia. Uma operação começa quando produto, pedido e produção trabalham juntos.</p><div><a href="#projeto">Solicitar análise <b>↗</b></a><a href="#interesse">Cadastrar interesse <b>↗</b></a></div></section>
   </main>
 
   <footer><a class="brand" href="#topo"><span class="brand-mark">P</span><span>PUB<sup>3D</sup></span></a><span>Personalizar. Desenvolver. Operar. Replicar.</span><span>© <span id="year"></span> PUB 3D</span></footer>
