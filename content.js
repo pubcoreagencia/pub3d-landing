@@ -13,3 +13,7 @@ const pub3dLogoStyles = document.createElement('link');
 pub3dLogoStyles.rel = 'stylesheet';
 pub3dLogoStyles.href = 'logo.css';
 document.head.append(pub3dLogoStyles);
+const pub3dSceneStyles = document.createElement('link');
+pub3dSceneStyles.rel = 'stylesheet';
+pub3dSceneStyles.href = 'scene.css';
+document.head.append(pub3dSceneStyles);
