@@ -10,3 +10,8 @@ export const states = {
   projeto: { name: 'CONVERGÊNCIA', mode: 'close', accent: '#e43d25', density: 4 }
 };
 export const stateIds = Object.keys(states);
+export const visualAssets = {
+  logo: { source: 'assets/pub-logo-transparent.png', type: 'brand-asset', section: 'header/footer', semanticRole: 'identidade PUB 3D', isReal: true, isConcept: false },
+  scene: { source: null, type: 'procedural-canvas', section: 'site-wide', semanticRole: 'modelo → slicing → fabricação → célula replicável', isReal: false, isConcept: true },
+  portfolio: { source: null, type: 'editorial-placeholder', section: 'portfolio', semanticRole: 'estrutura para acervo aprovado', isReal: false, isConcept: true }
+};
